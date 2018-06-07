@@ -10,5 +10,6 @@ Rails.application.routes.draw do
       registrations: "users/registrations",
       confirmations: "users/confirmations"
     }
+    get "peds", to: 'peds#index'
   end
 end
