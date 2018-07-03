@@ -52,9 +52,23 @@ bundle exec rake db:migrate
 
 4. install gems via bundler
 
+```
+gem install bundler
+bundle install --path vendor/bundle
+```
+
 5. create database
 
+```
+bundle exec rake db:create
+bundle exec rake db:migrate
+```
+
 6. run rails server
+
+```
+bundle exec rails s -b 0.0.0.0
+```
 
 7. open http://localhost:3000/peds with your browser
 
