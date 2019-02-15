@@ -1,5 +1,7 @@
 # Simple Rails App for checking Minimum Skill
 
+hogej
+
 This is a simple Rails App to see whether candidates have the minimum skills to participate in the development of Patentfield.
 
 # How to run (Docker on Windows)
