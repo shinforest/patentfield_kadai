@@ -3,13 +3,14 @@ module Peds
   PEDS_QUERIES_URL = "https://ped.uspto.gov/api/queries"
   class Client
     def self.search_by query
+
       params = {
-        "qf":"#{query.keys.first}",
-        "searchText":"#{query.values.first}",
+        "searchText": "#{query.keys.first}:(#{query.values.first})",
+        "qf": "#{query.keys.first}",
         "fl": "applId, appFilingDate, patentNumber, patentTitle, appStatus, #{query.keys.first}",
         "facet": "false",
         "sort": "applId asc",
-        "start": "0"
+        "start":"0"
       }
       search_with_queries(params)
     end
