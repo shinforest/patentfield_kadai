@@ -62,6 +62,7 @@ bundle install --path vendor/bundle
 ```
 bundle exec rake db:create
 bundle exec rake db:migrate
+bundle exec rake db:seed
 ```
 
 6. run rails server
@@ -74,6 +75,14 @@ bundle exec rails s -b 0.0.0.0
 
 8. confirm data retrieved by PEDS API of USPTO
    PEDS: https://ped.uspto.gov/peds/
+
+9. You can sign in with the following credential on development environment
+
+```
+id: info@example.com
+password: password
+```
+
 
 # Licence
 
