@@ -12,6 +12,7 @@ if Rails.env.development? or Rails.env.staging?
       user.first_name = "Taro"
       user.last_name = "Yamada"
       user.password = "password"
+      user.memo = "memo"
       user.skip_confirmation!
     end
   end
