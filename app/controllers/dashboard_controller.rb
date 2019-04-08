@@ -6,7 +6,6 @@ class DashboardController < ApplicationController
   end
 
   def update
-    p params
     @user = current_user
     @user.assign_attributes(params.require(:user).permit(:memo))
    if @user.save
