@@ -11,5 +11,7 @@ Rails.application.routes.draw do
       confirmations: "users/confirmations"
     }
     get "peds", to: 'peds#index'
+    post "search_record", to: 'search_record#search'
+    resources :search_record
   end
 end

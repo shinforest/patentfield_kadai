@@ -3,15 +3,6 @@
     Patent Examination Data System by USPTO
   %a{href: "https://ped.uspto.gov/peds/", target: "_blank"}
     link
-  %p
-    = link_to "検索履歴", :search_record
-
-  %form{:action => "/search_record", :method => "post"}
-    Title:
-    %input{:name => "word", :size => "40"}
-    %br
-    %input{:type => "submit", :value => "send"}
-/
   %ul
     %li
       %span

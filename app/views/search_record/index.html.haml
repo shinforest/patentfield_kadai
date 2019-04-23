@@ -1,0 +1,9 @@
+%div{style: "min-height:600px;"}
+  %h1
+    検索履歴
+  %ul
+    - @search_records.each do |search_record|
+      %li
+        %span
+          = search_record[:value]
+
