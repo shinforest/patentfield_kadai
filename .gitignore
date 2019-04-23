@@ -18,5 +18,7 @@
 
 /.vagrant
 
+/Vagrantfile
+
 .byebug_history
 .DS_Store
