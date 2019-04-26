@@ -16,8 +16,7 @@
 /node_modules
 /yarn-error.log
 
-/.vagrant
-
+/.vagrant/
 /Vagrantfile
 
 .byebug_history

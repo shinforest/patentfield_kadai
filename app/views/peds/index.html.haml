@@ -4,9 +4,9 @@
   %a{href: "https://ped.uspto.gov/peds/", target: "_blank"}
     link
   %p
-    = link_to "検索履歴", :search_record
+    = link_to "検索履歴", :search_records
 
-  %form{:action => "/search_record", :method => "post"}
+  %form{:action => "/search_records", :method => "post"}
     Title:
     %input{:name => "word", :size => "40"}
     %br
