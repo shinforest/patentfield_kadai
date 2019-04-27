@@ -3,22 +3,11 @@
     Patent Examination Data System by USPTO
   %a{href: "https://ped.uspto.gov/peds/", target: "_blank"}
     link
-  %ul
-    %li
-      %span
-        %b
-          applId
-      %span
-        %b
-          patentTitle
-      %span
-        %b
-          firstNamedApplicant
-    - @docs.each do |doc|
-      %li
-        %span
-          = doc[:applId]
-        %span
-          = doc[:patentTitle]
-        %span
-          = doc[:firstNamedApplicant]
+  %p
+    = link_to "検索履歴", :search_records
+
+  %form{:action => "/search_records", :method => "post"}
+    Title:
+    %input{:name => "word", :size => "40"}
+    %br
+    %input{:type => "submit", :value => "send"}

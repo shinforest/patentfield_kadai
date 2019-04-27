@@ -16,5 +16,8 @@
 /node_modules
 /yarn-error.log
 
+/.vagrant/
+/Vagrantfile
+
 .byebug_history
 .DS_Store
