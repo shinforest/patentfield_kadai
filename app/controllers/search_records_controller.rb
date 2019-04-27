@@ -7,9 +7,9 @@ class SearchRecordsController < ApplicationController
 
   def search
     @search_record = SearchRecord.new({value: params[:word]})
-      if @search_record.save
-        result = Peds::Client.search_by(firstNamedApplicant: params[:word])
-        @docs = result[:body][:queryResults][:searchResponse][:response][:docs]
-      end
+    if @search_record.save
+      result = Peds::Client.search_by(firstNamedApplicant: params[:word])
+      @docs = result[:body][:queryResults][:searchResponse][:response][:docs]
+    end
   end        
 end
