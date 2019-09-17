@@ -1,0 +1,16 @@
+current directory: /Users/user/rails-minimum-skill-check/vendor/bundle/ruby/2.4.0/gems/hamlit-2.10.0/ext/hamlit
+/Users/user/.rbenv/versions/2.4.4/bin/ruby -r ./siteconf20190915-87103-19dhut7.rb extconf.rb
+creating Makefile
+
+current directory: /Users/user/rails-minimum-skill-check/vendor/bundle/ruby/2.4.0/gems/hamlit-2.10.0/ext/hamlit
+make "DESTDIR=" clean
+
+current directory: /Users/user/rails-minimum-skill-check/vendor/bundle/ruby/2.4.0/gems/hamlit-2.10.0/ext/hamlit
+make "DESTDIR="
+compiling hamlit.c
+compiling hescape.c
+linking shared-object hamlit/hamlit.bundle
+
+current directory: /Users/user/rails-minimum-skill-check/vendor/bundle/ruby/2.4.0/gems/hamlit-2.10.0/ext/hamlit
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hamlit.bundle ./.gem.20190915-87103-w25kpp/hamlit

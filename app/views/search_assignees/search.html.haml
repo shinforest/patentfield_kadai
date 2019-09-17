@@ -1,0 +1,13 @@
+%div{style: "min-height:600px;"}
+  %h1
+    Patent Assignees Examination Data System by USPTO
+
+  %ul
+    %li
+      %span
+        %b
+          firstNamedApplicant
+    - @docs.each do |doc|
+      %li
+        %span
+          = doc[:firstNamedApplicant]

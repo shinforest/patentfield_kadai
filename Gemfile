@@ -7,7 +7,7 @@ end
 
 ruby '2.4.4'
 gem 'rails', '~> 5.1.4'
-gem 'pg', '~> 0.18'
+gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -19,6 +19,8 @@ gem 'hamlit'
 gem "devise"
 gem 'bootstrap-sass'
 gem 'rest-client'
+gem "binding_of_caller"
+
 
 group :production do
   gem 'rails_12factor'

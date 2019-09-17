@@ -1,0 +1,8 @@
+%div{style: "min-height:600px;"}
+  %h1
+    検索履歴
+  %ul
+    - @search_assignees.each do |search_assignee|
+      %li
+        %span
+          = search_assignees[:value]

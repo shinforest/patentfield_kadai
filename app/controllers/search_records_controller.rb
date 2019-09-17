@@ -11,5 +11,5 @@ class SearchRecordsController < ApplicationController
       result = Peds::Client.search_by(firstNamedApplicant: params[:word])
       @docs = result[:body][:queryResults][:searchResponse][:response][:docs]
     end
-  end        
+  end
 end

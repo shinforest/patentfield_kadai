@@ -13,5 +13,8 @@ Rails.application.routes.draw do
     get "peds", to: 'peds#index'
     post "search_records", to: 'search_records#search'
     resources :search_records
+    
+    post "search_assignees", to: 'search_assignees#search'
+    resources :search_assignees
   end
 end
