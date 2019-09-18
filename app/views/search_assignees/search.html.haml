@@ -1,13 +1,11 @@
 %div{style: "min-height:600px;"}
-  %h1
-    Patent Assignees Examination Data System by USPTO
 
-  %ul
-    %li
-      %span
-        %b
-          firstNamedApplicant
-    - @docs.each do |doc|
-      %li
-        %span
-          = doc[:firstNamedApplicant]
+  - i = 0
+  - until @results["assignees"][i] == nil do
+    - begin
+    
+      = @results["assignees"][i]["assignee_first_name"]
+      = @results["assignees"][i]["assignee_last_name"]
+      %b
+
+      - i += 1
